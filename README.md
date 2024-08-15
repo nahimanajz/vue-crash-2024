@@ -29,11 +29,16 @@ pnpm build
 ```
 
 ## Vue lifecyle methods
+
 - onBeforeMount - called before begins
 - onMounted - called when component is mounted
 - onBeforeUpdate - called when reactive data changes and before re-render
 - onUpdated - called after re-render
 - onBeforeUnmoun - called after the instance is destoyed
 - onActivated - called when a kept-alive component is activated
-- onDeactivated - called when a kept alive component is deactated 
-onErrorCaptured - called when an error is captured from a child component
+- onDeactivated - called when a kept alive component is deactated
+  onErrorCaptured - called when an error is captured from a child component
+
+# Notes for React devs
+
+React`<div> {children}` ====> vue `<div><slot></slot></div>`
