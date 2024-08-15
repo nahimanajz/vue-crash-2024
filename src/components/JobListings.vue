@@ -17,7 +17,7 @@ defineProps({
 });
 onMounted(async () => {
   try {
-    const { data } = await axios.get("http://localhost:5001/jobs");
+    const { data } = await axios.get(`/api/jobs`);
     state.jobs = data;
   } catch (error) {
     console.log("Error fetching ...", error);

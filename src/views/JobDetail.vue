@@ -14,7 +14,7 @@ const route = useRoute()
 const jobId = route.params.id
 onMounted(async () => {
   try {
-    const { data } = await axios.get(`http://localhost:5001/jobs/${jobId}`)
+    const { data } = await axios.get(`/api/jobs/${jobId}`)
     state.job = data
   } catch (error) {
     console.error("failded to fetch job detail", error)
