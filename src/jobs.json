@@ -139,34 +139,6 @@
         "contactEmail": "robivapi@mailinator.com",
         "contactPhone": "+1 (384) 847-2732"
       }
-    },
-    {
-      "id": "158c",
-      "type": "Remote",
-      "title": "Jane Morris",
-      "description": "Culpa excepteur dol",
-      "location": "Eiusmod quia tenetur",
-      "salary": "$90K - $100K",
-      "company": {
-        "name": "Rivers Cline Trading",
-        "description": "Dolorem amet magna ",
-        "contactEmail": "kedygafaz@mailinator.com",
-        "contactPhone": "+1 (429) 547-8941"
-      }
-    },
-    {
-      "id": "db81",
-      "type": "Full-Time",
-      "title": "Patricia Saunders",
-      "description": "Dicta molestias quis",
-      "location": "Neque consequatur el",
-      "salary": "$60K - $70K",
-      "company": {
-        "name": "Merritt and Hinton LLC",
-        "description": "Non veniam minima e",
-        "contactEmail": "pesyter@mailinator.com",
-        "contactPhone": "+1 (316) 558-4912"
-      }
     }
   ]
 }
