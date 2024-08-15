@@ -1,6 +1,5 @@
 <script setup>
 import { defineProps, ref, computed } from 'vue'
-import 'primeicons/primeicons.css'
 import { RouterLink } from 'vue-router';
 
 const props = defineProps({
