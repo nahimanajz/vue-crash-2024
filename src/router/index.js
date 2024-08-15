@@ -1,24 +1,36 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
-import JobView from '@/views/JobView.vue';
+import JobsView from '@/views/JobsView.vue';
+import NotFoundView from '@/views/NotFound.vue';
+import JobDetail from '@/views/JobDetail.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
-    routes:[
+    routes: [
         {
             path: '/',
             name: 'home',
-            component:HomeView
+            component: HomeView
         },
         {
             path: '/jobs',
             name: 'Jobs',
-            component:JobView
+            component: JobsView
         },
         {
             path: '/jobs/add',
             name: 'Add Jobs',
-            component:JobView
+            component: JobsView
+        },
+        {
+            path: "/jobs/:id",
+            name: "job",
+            component: JobDetail
+        },
+        {
+            path: '/:catchAll(.*)',
+            name: 'not-found',
+            component: NotFoundView
         }
     ]
 })
