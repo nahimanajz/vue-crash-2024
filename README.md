@@ -90,3 +90,39 @@ onMounted(async()=>{
   </template>
   </script>
 ```
+
+## VueJs style guides and folder structure
+
+### Folder structure
+  ```
+├─ api/ 
+│  ├─ index.ts 
+│  ├─ product.ts 
+│  └─ category.ts 
+├─ composables/ # for reusable utilities (like date/time helpers). 
+│  └─ ExampleUtil.ts 
+├─ constants/ 
+│  └─ constants.ts   
+├─ types/ 
+│  └─ index.ts                                                         |  
+├─ layouts/  
+├─ router/ 
+│  └─ index.ts 
+├─ services/ 
+│  └─ MyService.ts 
+├─ store/ 
+│  └─ MyStore.ts 
+├─ views/ 
+├─ components/ 
+├─ .env.local 
+├─ .env.staging 
+├─ .env.production 
+└─ main.js 
+└─ App.vue 
+```
+##  Ressources link
+1. [Code style guideline](https://vuejs.org/style-guide/rules-strongly-recommended.html)
+
+2. [Folder structure](https://medium.com/@mohandabdiche/building-efficient-frontends-a-vue-3-blueprint-for-modern-medium-sized-applications-671dd403ca62)
+
+
