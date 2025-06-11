@@ -94,13 +94,13 @@ onMounted(async()=>{
 ## VueJs style guides and folder structure
 
 ### Folder structure
-  ```
+```
 ├─ api/ 
 │  ├─ index.ts 
 │  ├─ product.ts 
 │  └─ category.ts 
 ├─ composables/ # for reusable utilities (like date/time helpers). 
-│  └─ ExampleUtil.ts 
+│  └─ format-date.ts     # example of reuasable codes
 ├─ constants/ 
 │  └─ constants.ts   
 ├─ types/ 
@@ -113,11 +113,16 @@ onMounted(async()=>{
 ├─ store/ 
 │  └─ MyStore.ts 
 ├─ views/ 
+│  └─ moduleA/
+│  └─ moduleB/
 ├─ components/ 
+│  └─ shared/ui
+│  └─ ModuleA/
+│  └─ ModuleB/
 ├─ .env.local 
 ├─ .env.staging 
 ├─ .env.production 
-└─ main.js 
+└─ main.ts
 └─ App.vue 
 ```
 ##  Ressources link
